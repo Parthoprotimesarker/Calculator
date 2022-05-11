@@ -53,7 +53,7 @@ public class Calculator_app extends javax.swing.JFrame {
             
     }
     }
-        public void enable(){
+        public void enablebutton(){
              jTextField1.setEnabled(true);
              jRadioButton1.setEnabled(false);
               jRadioButton2.setEnabled(true);
@@ -86,7 +86,7 @@ public class Calculator_app extends javax.swing.JFrame {
 
         }
     
-    public void disable()
+    public void disablebutton()
     {
         
        jTextField1.setEnabled(false);
@@ -434,10 +434,11 @@ public class Calculator_app extends javax.swing.JFrame {
                         .addComponent(jButton15)
                         .addComponent(jButton12)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton19)
-                    .addComponent(jButton17))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton19)
+                        .addComponent(jButton17)))
                 .addContainerGap())
         );
 
@@ -553,11 +554,11 @@ jLabel1.setText(num + "+");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
-        disable();
+        disablebutton();
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        enable();
+        enablebutton();
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
