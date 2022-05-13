@@ -4,6 +4,7 @@ public class Calculator {
     public static void main(String[] args) {
         int number1 = 2;
         int number2 = 5;
+        int number3 = 10;
         Operator operator = OperatorFactory.createOperator("+");
         System.out.println(operator.calculate(number1, number2));
         Operator operator1 = OperatorFactory.createOperator("-");
